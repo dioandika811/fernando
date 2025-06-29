@@ -1,0 +1,98 @@
+header {
+  background-color: #fff5e1; /* warna krem seperti dapur */
+  height: 100vh;
+  background-position: center center;
+  background-image: url("/images/kitchen-bg.jpg"); /* opsional background */
+  background-size: cover;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 0 0 2px #e0c7a3;
+}
+
+.header-jumbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  backdrop-filter: brightness(90%);
+}
+
+.header-jumbotron > img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #e36f27; /* warna oranye khas makanan */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-jumbotron > h3 {
+  color: #d9411e;
+  margin: 30px 0 10px 0;
+  padding: 5px;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+}
+
+.header-jumbotron > p {
+  padding: 5px;
+  margin: 0 10px 20px 10px;
+  color: #444;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 20px;
+}
+
+.socialMedia > a {
+  background-color: #fff0d6;
+  color: #e36f27;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.socialMedia > a > svg {
+  height: 28px;
+  width: 28px;
+}
+
+.socialMedia > a:hover {
+  background-color: #e36f27;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .socialMedia > a {
+    width: 55px;
+    height: 55px;
+  }
+
+  .socialMedia > a > svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .header-jumbotron > h3 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  .header-jumbotron > p {
+    font-size: 1rem;
+  }
+}
